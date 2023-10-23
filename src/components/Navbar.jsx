@@ -20,8 +20,12 @@ const Links = styled.div`
     gap: 50px;
 `
 
-const Logo = styled.img`
+const Logo = styled.div`
+    font-family: 'Dancing';
+    font-size: 30px;
     height: 50px;
+    display: flex;
+    align-items: center;
 `
 
 const List = styled.ul`
@@ -60,7 +64,7 @@ const Navbar = () => {
     <Section>
         <Container>
             <Links>
-                <Logo src="./img/logo.png" />
+                <Logo>JONGHO LEE</Logo>
                 <List>
                     <ListItem>Home</ListItem>
                     <ListItem>Studio</ListItem>

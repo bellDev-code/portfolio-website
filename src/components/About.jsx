@@ -28,6 +28,7 @@ const Left = styled.div`
 `
 const Title = styled.h1`
   font-size: 60px;
+  font-weight: 700;
   margin: 0;
 `
 
@@ -85,7 +86,7 @@ const Right = styled.div`
 // }
 // `
 
-const Hero = () => {
+const About = () => {
   return (
     <Section>
       <Navbar />
@@ -96,8 +97,10 @@ const Hero = () => {
             <Line src="./img/line.png" />
             <SubTitle>Web Front-end Developer</SubTitle>
           </WhtaWeDo>
-          <Desc>Description</Desc>
-          <Button>Lean More</Button>
+          <Desc>Interactive FE 개발자가 되고 싶습니다.<br />
+            사용자에게 편안하고 즐거운 경험을 제공하고 싶습니다.
+          </Desc>
+          <Button>Github</Button>
         </Left>
         <Right>
           {/* 3D Model */}
@@ -108,4 +111,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default About
