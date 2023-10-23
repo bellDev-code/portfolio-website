@@ -1,8 +1,9 @@
 import { styled } from 'styled-components'
 import Contact from './components/Contact'
-import Hero from './components/Hero'
+import About from './components/About'
 import Who from './components/Who'
 import Works from './components/Works'
+import Test from "./components/Test"
 
 const Container = styled.div`
   height: 100vh;
@@ -20,10 +21,11 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
-      <Hero />
+      <About />
       <Who />
       <Works />
       <Contact />
+      <Test />
     </Container>
   )
 }
