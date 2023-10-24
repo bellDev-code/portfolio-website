@@ -1,6 +1,9 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import { styled } from 'styled-components'
 import Navbar from './Navbar'
+import Mac from './Mac'
+import { Canvas } from '@react-three/fiber'
+import { OrbitControls, Stage } from '@react-three/drei'
 
 const Section = styled.section`
   height: 100vh;
@@ -67,25 +70,6 @@ const Right = styled.div`
   /* position: relative; */
 `
 
-// const Img = styled.img`
-//   width: 800px;
-//   height: 600px;
-//   object-fit: contain;
-//   position: absolute;
-//   top: 0;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   margin: auto;
-//   animation: animate 2s infinite ease alternative;
-
-//   @keyframes animate {
-//     to {
-//       transform: translateY(20px)
-//     }  
-// }
-// `
-
 const About = () => {
   return (
     <Section>
@@ -104,7 +88,14 @@ const About = () => {
         </Left>
         <Right>
           {/* 3D Model */}
-          
+          <Canvas>
+            <Suspense fallback={null}>
+              <Stage environment="city" intensity={0.6}>
+                <Mac />
+              </Stage>
+              <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.5}  />
+            </Suspense>
+          </Canvas>
         </Right>
       </Container>
     </Section>
