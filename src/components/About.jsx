@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Mac from './Mac'
 import { Canvas } from '@react-three/fiber'
 import { OrbitControls, Stage } from '@react-three/drei'
+import Typewriter from "../hooks/Typewriter"
 
 const Section = styled.section`
   height: 100vh;
@@ -79,10 +80,12 @@ const About = () => {
           <Title>BellDev-code Portfolio</Title>
           <WhtaWeDo>
             <Line src="./img/line.png" />
-            <SubTitle>Web Front-end Developer</SubTitle>
+            <SubTitle>
+              <Typewriter text="Web Front-End Developer" delay={100} />
+            </SubTitle>
           </WhtaWeDo>
-          <Desc>Interactive FE 개발자가 되고 싶습니다.<br />
-            사용자에게 편안하고 즐거운 경험을 제공하고 싶습니다.
+          <Desc>
+            <Typewriter text="사용자에게 편하고 interative한 UI/UX 추구합니다." delay={100} />
           </Desc>
           <Button>Github</Button>
         </Left>
