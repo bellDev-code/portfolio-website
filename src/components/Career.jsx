@@ -68,7 +68,7 @@ const Button = styled.button`
   cursor: pointer;
 `;
 
-const Who = () => {
+const Career = () => {
   return (
     <Section>
       <Container>
@@ -84,15 +84,7 @@ const Who = () => {
         </Canvas>
         </Left>
         <Right>
-          <Title>주식회사 UI/UX</Title>
-          <WhatWeDo>
-            <Line src="./img/line.png" />
-            <Subtitle>IT 개발팀 (2020.03.02 - 2020.09.18)</Subtitle>
-          </WhatWeDo>
-          <Desc>
-            Web Publishing / FE 개발 인턴
-          </Desc>
-          <Title>주식회사 앤스페이스</Title>
+        <Title>주식회사 앤스페이스</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
             <Subtitle>스페이스 클라우드 개발팀 (2022.01.08 - 2022.11.11)</Subtitle>
@@ -101,10 +93,18 @@ const Who = () => {
             스페이스 클라우드 GUEST & HOST 웹 서비스 기능 개발 / FE 개발
           </Desc>
           <Button>go to service</Button>
+          <Title>주식회사 UI/UX</Title>
+          <WhatWeDo>
+            <Line src="./img/line.png" />
+            <Subtitle>IT 개발팀 (2020.03.02 - 2020.09.18)</Subtitle>
+          </WhatWeDo>
+          <Desc>
+            Web Publishing / FE 개발 인턴
+          </Desc>
         </Right>
       </Container>
     </Section>
   )
 }
 
-export default Who
+export default Career
