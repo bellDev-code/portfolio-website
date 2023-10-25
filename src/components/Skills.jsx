@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { styled } from 'styled-components'
 import TextTransition, { presets } from 'react-text-transition';
 
-const TEXTS = ['JavaScript', 'TypeScript', 'React'];
+const TEXTS = ['JavaScript', 'TypeScript', 'React', 'Three.js'];
 
 const Section = styled.section`
   height: 100vh;

@@ -47,8 +47,9 @@ const Navbar = () => {
                 <Logo>JONGHO LEE</Logo>
                 <List>
                     <ListItem>Home</ListItem>
-                    <ListItem>Studio</ListItem>
-                    <ListItem>Works</ListItem>
+                    <ListItem>Career</ListItem>
+                    <ListItem>Skills</ListItem>
+                    <ListItem>Project</ListItem>
                     <ListItem>Contact</ListItem>
                 </List>
             </Links>
