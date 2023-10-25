@@ -3,6 +3,7 @@ import Contact from './components/Contact'
 import About from './components/About'
 import Skills from './components/Skills'
 import Career from './components/Career'
+import Project from './components/Project'
 
 const Container = styled.div`
   height: 100vh;
@@ -23,6 +24,7 @@ function App() {
       <About />
       <Career />
       <Skills />
+      <Project />
       <Contact />
     </Container>
   )

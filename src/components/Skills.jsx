@@ -8,19 +8,16 @@ const Section = styled.section`
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 0 20%;
 `
 
 const Container = styled.div`
   width: 1400px;
   display: flex;
-  justify-content: space-between;
-`
-
-const Left = styled.div`
-  flex: 1;
-  display: flex;
   align-items: center;
+  justify-content: space-around;
 `
 
 const List = styled.ul`
@@ -30,16 +27,17 @@ const List = styled.ul`
   gap: 20px;
 `
 
+const Title = styled.h1`
+  font-size: 100px;
+  margin-top: 0;
+  margin-bottom: 20px;
+`
+
 const ListItem = styled.li`
   font-size: 90px;
   font-weight: bold;
   cursor: pointer;
   color: white;
-
-`
-
-const Right = styled.div`
-  flex: 1;
 `
 
 const Works = () => {
@@ -52,29 +50,16 @@ const Works = () => {
     );
     return () => clearTimeout(intervalId);
   },[])
-  
+
   return (
     <Section>
+      <Title>My Skills</Title>
       <Container>
-        <Left>
-          <List>
+        <List>
           <TextTransition springConfig={presets.wobbly}>
             <ListItem>{TEXTS[index % TEXTS.length]}</ListItem>
           </TextTransition>
-          </List>
-        </Left>
-        <Right>
-          {/* 조건부 렌더링을 사용하여 내용을 변경 */}
-          {TEXTS[index % TEXTS.length] === 'JavaScript' && (
-            <div>JavaScript content here</div>
-          )}
-          {TEXTS[index % TEXTS.length] === 'TypeScript' && (
-            <div>TypeScript content here</div>
-          )}
-          {TEXTS[index % TEXTS.length] === 'React' && (
-            <div>React content here</div>
-          )}
-        </Right>
+        </List>
       </Container>
     </Section>
   )

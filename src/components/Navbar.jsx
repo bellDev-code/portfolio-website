@@ -4,6 +4,7 @@ import { styled } from "styled-components"
 const Section = styled.section`
     display: flex;
     justify-content: center;
+    width: 100%;
 `
 
 const Container = styled.div`
@@ -35,27 +36,6 @@ const List = styled.ul`
 `
 
 const ListItem = styled.li`
-    cursor: pointer;
-`
-
-const Icons = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 20px;
-`
-
-const Icon = styled.img`
-    width: 20px;
-    cursor: pointer;
-`
-
-const Button = styled.button`
-    width: 100px;
-    padding: 10px;
-    background-color: #da4ea2;
-    color: white;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
 `
 

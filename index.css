@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: 'TheJamsil';
+    overflow: hidden;
 }
 
 @font-face {
