@@ -4,7 +4,7 @@ import Rebrand from "./projects/Rebrand"
 import MMA from "./projects/MMA"
 
 const Section = styled.section`
-  height: 500vh;
+  height: 220vh;
   scroll-snap-align: center;
 `;
 
