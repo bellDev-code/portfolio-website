@@ -11,6 +11,10 @@ const Section = styled.section`
   @media only screen and (max-width: 768px) {
     height: 350vh;
   }
+
+  @media only screen and (max-width: 1000px) {
+    height: 450vh;
+  }
 `;
 
 const Container = styled.div`

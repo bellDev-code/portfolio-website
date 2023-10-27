@@ -20,13 +20,19 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
   @media only screen and (max-width: 768px) {
     justify-content: center;
   }
 `;
 
 const Title = styled.h1`
-  font-weight: 200;
+  font-weight: 500;
+  margin-top: 50px;
+
+  @media only screen and (max-width: 768px) {
+    margin-top: inherit;
+  }
 `;
 
 const Form = styled.form`

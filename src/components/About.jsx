@@ -63,6 +63,7 @@ const SubTitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
+  margin: 0;
 
   @media only screen and (max-width: 768px) {
     font-size: 16px;

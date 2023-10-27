@@ -33,6 +33,7 @@ const Logo = styled.div`
     height: 50px;
     display: flex;
     align-items: center;
+    cursor: pointer;
 `
 
 const List = styled.ul`
@@ -64,7 +65,7 @@ const Navbar = () => {
         <Section>
             <Container>
                 <Links>
-                    <Logo>JONGHO LEE</Logo>
+                    <Logo onClick={() => handleClick('about')}>JONGHO LEE</Logo>
                     <List>
                         {sections.map((section) => (
                             <ListItem key={section.id} onClick={() => handleClick(section.id)}>
