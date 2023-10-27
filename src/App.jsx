@@ -4,6 +4,7 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Career from './components/Career'
 import Project from './components/Project'
+import { useRef } from 'react'
 
 const Container = styled.div`
   height: 100vh;
@@ -20,7 +21,6 @@ const Container = styled.div`
 `
 
 function App() {
-  
   return (
     <Container>
       <About />

@@ -90,7 +90,7 @@ const Right = styled.div`
 
 const About = () => {
   return (
-    <Section>
+    <Section id='about'>
       <Navbar />
       <Container>
         <Left>

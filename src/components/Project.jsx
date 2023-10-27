@@ -29,7 +29,7 @@ const Title = styled.h1`
 
 const Project = () => {
   return (
-    <Section>
+    <Section id='project'>
       <Container>
         <Title>PROJECT</Title>
         <Portfolio />

@@ -26,6 +26,7 @@ const Container = styled.div`
 
 const Left = styled.div`
   flex: 1;
+  margin-top: 50px;
 
   @media only screen and (max-width: 768px) {
     display: none;
@@ -80,7 +81,7 @@ const Desc = styled.p`
 
 const Career = () => {
   return (
-    <Section>
+    <Section id='career'>
       <Container>
         <Left>
         <Canvas camera={{

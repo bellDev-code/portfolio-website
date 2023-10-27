@@ -45,23 +45,37 @@ const ListItem = styled.li`
     cursor: pointer;
 `
 
+const sections = [
+    { id: 'about', label: 'Home' },
+    { id: 'career', label: 'Career' },
+    { id: 'skill', label: 'Skills' },
+    { id: 'project', label: 'Project' },
+    { id: 'contact', label: 'Contact' },
+  ];
+  
 const Navbar = () => {
-  return (
-    <Section>
-        <Container>
-            <Links>
-                <Logo>JONGHO LEE</Logo>
-                <List>
-                    <ListItem>Home</ListItem>
-                    <ListItem>Career</ListItem>
-                    <ListItem>Skills</ListItem>
-                    <ListItem>Project</ListItem>
-                    <ListItem>Contact</ListItem>
-                </List>
-            </Links>
-        </Container>
-    </Section>
-  )
+    const handleClick = (sectionId) => {
+        const element = document.getElementById(sectionId)
+        if(element) {
+            element.scrollIntoView({ behavior: 'smooth'})
+        }
+    }
+    return (
+        <Section>
+            <Container>
+                <Links>
+                    <Logo>JONGHO LEE</Logo>
+                    <List>
+                        {sections.map((section) => (
+                            <ListItem key={section.id} onClick={() => handleClick(section.id)}>
+                                {section.label}
+                            </ListItem>
+                        ))}
+                    </List>
+                </Links>
+            </Container>
+        </Section>
+    )
 }
 
 export default Navbar

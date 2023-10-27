@@ -10,7 +10,11 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 20%;
+  padding: 50px 20%;
+
+  @media only screen and (max-width: 768px) {
+    padding: inherit 20%
+  }
 `
 
 const Container = styled.div`
@@ -64,7 +68,7 @@ const Works = () => {
   },[])
 
   return (
-    <Section>
+    <Section id='skill'>
       <Title>My Skills</Title>
       <Container>
         <List>
