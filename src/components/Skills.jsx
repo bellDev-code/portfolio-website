@@ -14,10 +14,14 @@ const Section = styled.section`
 `
 
 const Container = styled.div`
-  width: 1400px;
+  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: end;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    justify-content: inherit;
+  }
 `
 
 const List = styled.ul`
@@ -31,6 +35,10 @@ const Title = styled.h1`
   font-size: 100px;
   margin-top: 0;
   margin-bottom: 20px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `
 
 const ListItem = styled.li`
@@ -38,6 +46,10 @@ const ListItem = styled.li`
   font-weight: bold;
   cursor: pointer;
   color: white;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `
 
 const Works = () => {

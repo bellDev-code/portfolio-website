@@ -15,12 +15,18 @@ const Section = styled.section`
   justify-content: space-between;
 `
 
-const Container = styled.div`
+const Container = styled.section`
   height: 100vh;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  margin-left: 60px;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    margin-left: 30px;
+  }
 `
 
 const Left = styled.div`
@@ -34,6 +40,10 @@ const Title = styled.h1`
   font-size: 60px;
   font-weight: 700;
   margin: 0;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 30px;
+  }
 `
 
 const WhtaWeDo = styled.div`
@@ -53,6 +63,10 @@ const SubTitle = styled.h2`
 const Desc = styled.p`
   font-size: 24px;
   color: lightgray;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 `
 
 const Button = styled.button`
@@ -69,6 +83,9 @@ const Button = styled.button`
 const Right = styled.div`
   flex: 3;
   /* position: relative; */
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `
 
 const About = () => {
@@ -85,9 +102,9 @@ const About = () => {
             </SubTitle>
           </WhtaWeDo>
           <Desc>
-            <Typewriter text="사용자에게 편하고 INTERACTIVE한 UI/UX 추구합니다." delay={100} />
+            <Typewriter text="사용자에게 편하고 Interactive한 UI/UX 추구합니다." delay={100} />
           </Desc>
-          <Button>Github</Button>
+          <Button onClick={() => window.open('https://github.com/bellDev-code')}>Github</Button>
         </Left>
         <Right>
           {/* 3D Model */}

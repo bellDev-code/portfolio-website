@@ -5,10 +5,15 @@ const Section = styled.section`
     display: flex;
     justify-content: center;
     width: 100%;
+    position: fixed;
+
+    @media only screen and (max-width: 768px) {
+        position: inherit;
+    }
 `
 
 const Container = styled.div`
-    width: 1400px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,6 +24,7 @@ const Links = styled.div`
     display: flex;
     align-items: center;
     gap: 50px;
+    padding-left: 30px;
 `
 
 const Logo = styled.div`

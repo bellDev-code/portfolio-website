@@ -13,12 +13,14 @@ const Container = styled.div`
   scrollbar-width: none;
   background: url("./img/bg.jpeg");
   color: white;
+  position: relative;
   &::-webkit-scrollbar {
     display: none;
   }
 `
 
 function App() {
+  
   return (
     <Container>
       <About />

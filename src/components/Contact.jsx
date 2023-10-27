@@ -62,6 +62,10 @@ const Button = styled.button`
   cursor: pointer;
   border-radius: 5px;
   padding: 20px;
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 200px;
+  }
 `;
 
 const Right = styled.div`

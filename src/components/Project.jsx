@@ -7,6 +7,10 @@ import Portfolio from "./projects/Portfolio"
 const Section = styled.section`
   height: 300vh;
   scroll-snap-align: center;
+
+  @media only screen and (max-width: 768px) {
+    height: 350vh;
+  }
 `;
 
 const Container = styled.div`
@@ -18,6 +22,7 @@ const Container = styled.div`
 `
 
 const Title = styled.h1`
+  margin-top: 60px;
   font-size: 40px;
   color: #da4ea2;
 `

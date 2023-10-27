@@ -14,19 +14,32 @@ const Section = styled.div`
 const Container = styled.div`
   height: 100vh;
   scroll-snap-align: center;
-  width: 1400px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    margin: 0 30px;
+  }
 `;
 
 const Left = styled.div`
   flex: 1;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `;
 
 const Title = styled.h1`
   padding-top: 10px;
   font-size: 45px;
   margin: 0;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 28px;
+  }
 `;
 
 const Right = styled.div`
@@ -49,12 +62,20 @@ const Line = styled.img`
 
 const Subtitle = styled.h2`
   color: #da4ea2;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 18px;
+  }
 `;
 
 const Desc = styled.p`
   font-size: 24px;
   margin: 0;
   color: lightgray;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 15px;
+  }
 `;
 
 const Career = () => {
