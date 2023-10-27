@@ -7,34 +7,34 @@ body {
 @font-face {
     font-family: 'TheJamsil';
     font-weight: 100;
-    src: url('./src/assets/fonts/The\ Jamsil\ 1\ Thin.ttf') format('truetype')
+    src: url('/fonts/The\ Jamsil\ 1\ Thin.ttf') format('truetype')
 }
 
 @font-face {
     font-family: 'TheJamsil';
     font-weight: 300;
-    src: url('./src/assets/fonts/The\ Jamsil\ 2\ Light.ttf') format('truetype')
+    src: url('fonts/The\ Jamsil\ 2\ Light.ttf') format('truetype')
 }
 
 @font-face {
     font-family: 'TheJamsil';
     font-weight: 500;
-    src: url('./src/assets/fonts/The\ Jamsil\ 3\ Regular.ttf') format('truetype')
+    src: url('/fonts/The\ Jamsil\ 3\ Regular.ttf') format('truetype')
 }
 
 @font-face {
     font-family: 'TheJamsil';
     font-weight: 600;
-    src: url('./src/assets/fonts/The\ Jamsil\ 4\ Medium.ttf') format('truetype')
+    src: url('/fonts/The\ Jamsil\ 4\ Medium.ttf') format('truetype')
 }
 
 @font-face {
     font-family: 'TheJamsil';
     font-weight: 700;
-    src: url('./src/assets/fonts/The\ Jamsil\ 5\ Bold.ttf') format('truetype')
+    src: url('/fonts/The\ Jamsil\ 5\ Bold.ttf') format('truetype')
 }
 
 @font-face {
     font-family: 'Dancing';
-    src: url('./src/assets/fonts/DancingScript-VariableFont_wght.ttf') format('truetype')
+    src: url('/fonts/DancingScript-VariableFont_wght.ttf') format('truetype')
 }
