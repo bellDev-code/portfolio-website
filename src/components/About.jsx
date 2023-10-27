@@ -85,7 +85,7 @@ const About = () => {
             </SubTitle>
           </WhtaWeDo>
           <Desc>
-            <Typewriter text="사용자에게 편하고 interative한 UI/UX 추구합니다." delay={100} />
+            <Typewriter text="사용자에게 편하고 INTERACTIVE한 UI/UX 추구합니다." delay={100} />
           </Desc>
           <Button>Github</Button>
         </Left>

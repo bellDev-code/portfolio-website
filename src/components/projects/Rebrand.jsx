@@ -39,11 +39,15 @@ const Left = styled.div`
   padding-right: 30px;
 `
 
-const ImgWrapper = styled.div`
-  background-image: url(${rebrandImage});
-  background-size: cover;
+const ImageWrapper = styled.div`
   width: 100%;
-  height: 450px;
+  height: 100%;
+
+`
+
+const Img = styled.img`
+  width: 100%;
+  height: 100%;
 `
 
 const Right = styled.div`
@@ -58,6 +62,7 @@ const PWarapper = styled.div`
     font-weight: 300;
 
     > span {
+      font-weight: 500;
       color: #da4ea2;
     }
   }
@@ -96,13 +101,16 @@ const Rebrand = () => {
             </SubTitleDesc>
             <ContentWrapper>
               <Left>
-                <ImgWrapper />
+                {/* <ImgWrapper /> */}
+                <ImageWrapper>
+                  <Img src={rebrandImage} />
+                </ImageWrapper>
               </Left>
               <Right>
                 <PWarapper>
                   <p>기존의 쇼핑몰 서비스 구현을 경험하고, 쇼핑몰의 복잡한 구조를 최소화하고자 하는 목표를 가지고 구현한 웹 사이트입니다.</p>
-                  <p><span>Webpack</span>과 <span>Babel</span>을 이용하여 React 개발 환경 구성하여 기존의 CRA를 통한 프로젝트의 차이를 알고, 
-                    복잡한 규모에 따라 파일간 관계가 복잡하고 무거워져 브라우저 로딩이 길어지고, 따라서 웹팩을 통해 파일간 의존성 관계 정리 및 최적화를 도전했습니다.
+                  <p><span>Webpack</span>과 <span>Babel</span>을 이용하여 React 개발 환경 구성하여 기존의 <span>CRA</span>를 통한 프로젝트의 차이를 알고, 
+                    복잡한 규모에 따라 파일간 관계가 복잡하고 무거워져 브라우저 로딩이 길어지는 현상을 대비하여, 웹팩을 통해 최적화를 도전했습니다.
                   </p>
                   <p>로그인 처리를 위한 <span>React Context</span>를 구현하여 상태관리를 하였습니다.</p>
                   <p>SQL 기초 개념 확립을 위한 <span>ORM</span>을 사용하지 않고, <span>Raw query 사용</span></p>
@@ -128,7 +136,6 @@ const Rebrand = () => {
                   <ContDesc>Postgresql</ContDesc>
                 </SubContent>
               </Right>
-              
             </ContentWrapper>
           </ProjectContainer>
   )

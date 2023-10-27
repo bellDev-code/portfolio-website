@@ -1,6 +1,6 @@
 import React from 'react'
 import { styled } from 'styled-components';
-import mmaImage from "../../assets/img/MMA.png"
+import portfolio from "../../assets/img/portfolio.png"
 
 const ProjectContainer = styled.div`
   background-color: white;
@@ -91,39 +91,48 @@ const ContLink = styled.div`
   cursor: pointer;
 `
 
-const MMA = () => {
+const Portfolio = () => {
   return (
     <ProjectContainer>
-      <ProjectTitle>MMA-Simulator</ProjectTitle>
+      <ProjectTitle>Web-Portfolio</ProjectTitle>
       <SubTitleDesc>
-        Vanilla TypeScript Simulator 구현<span>2021.06-2021-07</span>(1인 프로젝트)
+        Portfolio Website<span>2023.10-2023.10</span>(1인 프로젝트)
       </SubTitleDesc>
       <ContentWrapper>
         <Left>
           <ImageWrapper>
-            <Img src={mmaImage} />
+            <Img src={portfolio} />
           </ImageWrapper>
         </Left>
         <Right>
           <PWarapper>
-              <p>이 프로젝트는 <span>TypeScript</span>를 활용하여 객체 지향 프로그래밍으로 설계된 프로젝트 입니다. 
-                  설정된 플레이어들이 무작위로 선택한 기술을 사용하여 상대방과 경합하는 시뮬레이터를 구현했습니다. 
-                  TypeScrip를 재밌게 공부하기 위하여 진행한 프로젝트입니다.
+              <p>포트폴리오 웹사이트를 구축하면서 React 및 <span>three.js</span>를 활용하여, 
+                포트폴리오를 검토하는 방문자들에게 기억에 남고 시각적으로 흥미로운 경험을 제공하기 위해 시작된 포트폴리오 웹 사이트입니다.
               </p>
-              <p>이 프로젝트를 통해 클래스 기반의 <span>객체 지향 프로그래밍</span> 개념을 깊이 이해하고, 
-                  추후 다른 언어에서의 객체 지향 프로그래밍을 빠르게 익숙해질 수 있을 자신감을 얻었습니다.
-              </p>
-              <p>또한, 제가 추구하는 기술적 도전을 해결하는 데 어떤 방식으로 접근하고 문제를 해결하는지를 대변하고 있으며, 
-                다른 프로그래밍 언어나 프레임워크에 빠르게 적응하고 새로운 프로젝트에 적용하는 자신감을 나타냅니다.
+              <p>
+                방문자들에게 Interactive한 경험을 주기 위한 <span>3D Model</span>과 Web에서 <span>3차원 공간</span>을 즐길 수 있게 설계하였습니다.
+                기존 Javascript-Animation 효과뿐만 아니라 3D를 활용하여 더욱 더 입체감 있는 웹을 구성할 수 있다는 생각이 들었습니다.
               </p>
           </PWarapper>
           <SubContent>
             <ContTitle>주요 기능</ContTitle>
-            <ContDesc>타입 정의, class 객체 구현</ContDesc>
+            <ContDesc>Three.js를 활용한 3D 모델링 적용, 3차원 공간 구성, Canvas, GLTF-pipline을 활용하여 GLTF 변환</ContDesc>
           </SubContent>
           <SubContent>
             <ContTitle>깃 허브</ContTitle>
-            <ContLink onClick={() => open('https://github.com/bellDev-code/mma-simulater')}>https://github.com/bellDev-code/mma-simulater</ContLink>
+            <ContLink onClick={() => open('https://github.com/bellDev-code/portfolio-website')}>https://github.com/bellDev-code/portfolio-website</ContLink>
+          </SubContent>
+          <SubContent>
+            <ContTitle>Front-End</ContTitle>
+            <ContDesc>React, Three.js, React-Three-Fiber</ContDesc>
+          </SubContent>
+          <SubContent>
+            <ContTitle>Deployment</ContTitle>
+            <ContDesc>Github</ContDesc>
+          </SubContent>
+          <SubContent>
+            <ContTitle>URL</ContTitle>
+            <ContDesc></ContDesc>
           </SubContent>
         </Right>
       </ContentWrapper>
@@ -131,4 +140,4 @@ const MMA = () => {
   )
 }
 
-export default MMA
+export default Portfolio

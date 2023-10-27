@@ -57,17 +57,6 @@ const Desc = styled.p`
   color: lightgray;
 `;
 
-const Button = styled.button`
-  background-color: #da4ea2;
-  color: white;
-  font-weight: 500;
-  width: 120px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-`;
-
 const Career = () => {
   return (
     <Section>
@@ -92,7 +81,6 @@ const Career = () => {
           <Desc>
             스페이스 클라우드 GUEST & HOST 웹 서비스 기능 개발 / FE 개발
           </Desc>
-          <Button>go to service</Button>
           <Title>주식회사 UI/UX</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />

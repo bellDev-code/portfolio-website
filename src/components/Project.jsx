@@ -2,9 +2,10 @@ import React from 'react'
 import { styled } from 'styled-components';
 import Rebrand from "./projects/Rebrand"
 import MMA from "./projects/MMA"
+import Portfolio from "./projects/Portfolio"
 
 const Section = styled.section`
-  height: 220vh;
+  height: 300vh;
   scroll-snap-align: center;
 `;
 
@@ -26,6 +27,7 @@ const Project = () => {
     <Section>
       <Container>
         <Title>PROJECT</Title>
+        <Portfolio />
         <Rebrand />
         <MMA />
       </Container>
