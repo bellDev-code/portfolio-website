@@ -39,11 +39,11 @@ const Portfolio = () => {
           </SubContent>
           <SubContent>
             <ContTitle>Deployment</ContTitle>
-            <ContDesc>Github</ContDesc>
+            <ContDesc>Netlify</ContDesc>
           </SubContent>
           <SubContent>
             <ContTitle>URL</ContTitle>
-            <ContDesc></ContDesc>
+            <ContDesc onClick={() => window.open('https://belldev-code.netlify.app')}>https://belldev-code.netlify.app</ContDesc>
           </SubContent>
         </Right>
       </ContentWrapper>
