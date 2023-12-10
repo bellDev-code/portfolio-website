@@ -25,6 +25,9 @@ const Links = styled.div`
     align-items: center;
     gap: 50px;
     padding-left: 30px;
+    @media only screen and (max-width: 768px) {
+        padding-left: 10px;
+    }
 `
 
 const Logo = styled.div`
@@ -34,12 +37,21 @@ const Logo = styled.div`
     display: flex;
     align-items: center;
     cursor: pointer;
+
+    @media only screen and (max-width: 768px) {
+        font-size: 15px
+    }
 `
 
 const List = styled.ul`
     display: flex;
     gap: 20px;
     list-style: none;
+
+    @media only screen and (max-width: 768px) {
+        padding-right: 10px;
+        gap: 10px
+    }
 `
 
 const ListItem = styled.li`

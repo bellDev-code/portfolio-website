@@ -3,17 +3,14 @@ import { styled } from 'styled-components';
 import Rebrand from "./projects/Rebrand"
 import MMA from "./projects/MMA"
 import Portfolio from "./projects/Portfolio"
+import Secretout from './projects/Screatout';
 
 const Section = styled.section`
-  height: 300vh;
+  height: 400vh;
   scroll-snap-align: center;
 
   @media only screen and (max-width: 768px) {
-    height: 350vh;
-  }
-
-  @media only screen and (max-width: 1000px) {
-    height: 450vh;
+    height: 600vh;
   }
 `;
 
@@ -36,6 +33,7 @@ const Project = () => {
     <Section id='project'>
       <Container>
         <Title>PROJECT</Title>
+        <Secretout />
         <Portfolio />
         <Rebrand />
         <MMA />

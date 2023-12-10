@@ -27,11 +27,15 @@ const Left = styled.div`
 `;
 
 const Title = styled.h1`
-  font-weight: 500;
-  margin-top: 50px;
+  margin-top: 60px;
+  font-size: 40px;
+  color: #da4ea2;
 
   @media only screen and (max-width: 768px) {
-    margin-top: inherit;
+    display: flex;
+    margin-bottom: inherit;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -43,6 +47,7 @@ const Form = styled.form`
 
   @media only screen and (max-width: 768px) {
     width: 300px;
+    height: 100%;
   }
 `;
 
@@ -69,9 +74,6 @@ const Button = styled.button`
   border-radius: 5px;
   padding: 20px;
 
-  @media only screen and (max-width: 768px) {
-    margin-bottom: 200px;
-  }
 `;
 
 const Right = styled.div`
